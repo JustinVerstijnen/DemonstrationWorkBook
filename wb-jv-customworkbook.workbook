@@ -1,0 +1,580 @@
+{
+  "version": "Notebook/1.0",
+  "items": [
+    {
+      "type": 10,
+      "content": {
+        "chartId": "workbookd3a753ee-acd3-4405-843e-a9027c895973",
+        "version": "MetricsItem/2.0",
+        "size": 4,
+        "chartType": 0,
+        "resourceType": "microsoft.compute/virtualmachines",
+        "metricScope": 0,
+        "resourceIds": [
+          "/subscriptions/fd09e454-a13e-4e8c-a00e-a54b1385e2bd/resourceGroups/rg-jv-minecraftserver/providers/Microsoft.Compute/virtualMachines/vm-jv-minecraftserver"
+        ],
+        "timeContext": {
+          "durationMs": 3600000
+        },
+        "timeGrain": "PT1H",
+        "metrics": [
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Percentage CPU",
+            "aggregation": 4
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Available Memory Percentage",
+            "aggregation": 4
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Read Bytes",
+            "aggregation": 4
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Read Operations/Sec",
+            "aggregation": 4
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Write Bytes",
+            "aggregation": 4
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Write Operations/Sec",
+            "aggregation": 4
+          }
+        ],
+        "title": "Grid",
+        "gridSettings": {
+          "formatters": [
+            {
+              "columnMatch": "Subscription",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Name",
+              "formatter": 13,
+              "formatOptions": {
+                "linkTarget": "Resource",
+                "showIcon": true
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Percentage CPU",
+              "formatter": 8,
+              "formatOptions": {
+                "min": 0,
+                "max": 100,
+                "palette": "greenRed"
+              },
+              "numberFormat": {
+                "unit": 1,
+                "options": {
+                  "style": "decimal",
+                  "minimumIntegerDigits": 1,
+                  "minimumFractionDigits": 0,
+                  "maximumFractionDigits": 0
+                }
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Percentage CPU Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Available Memory Percentage",
+              "formatter": 8,
+              "formatOptions": {
+                "min": 0,
+                "max": 100,
+                "palette": "redGreen"
+              },
+              "numberFormat": {
+                "unit": 1,
+                "options": {
+                  "style": "decimal",
+                  "maximumFractionDigits": 0
+                }
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Available Memory Percentage Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Bytes",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 2,
+                "options": {
+                  "style": "decimal",
+                  "maximumFractionDigits": 0
+                }
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Bytes Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Operations/Sec",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 31,
+                "options": {
+                  "style": "decimal",
+                  "maximumFractionDigits": 0
+                }
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Operations/Sec Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Bytes",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 2,
+                "options": {
+                  "style": "decimal",
+                  "maximumFractionDigits": 0
+                }
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Bytes Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Operations/Sec",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 31,
+                "options": {
+                  "style": "decimal",
+                  "maximumFractionDigits": 0
+                }
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Operations/Sec Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Metric",
+              "formatter": 1
+            },
+            {
+              "columnMatch": "Aggregation",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Value",
+              "formatter": 1
+            },
+            {
+              "columnMatch": "Timeline",
+              "formatter": 9
+            }
+          ],
+          "rowLimit": 10000,
+          "labelSettings": [
+            {
+              "columnId": "microsoft.compute/virtualmachines--Percentage CPU",
+              "label": "CPU usage"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Percentage CPU Timeline",
+              "label": "Percentage CPU (Average) Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Available Memory Percentage",
+              "label": "RAM available"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Available Memory Percentage Timeline",
+              "label": "Available Memory Percentage (Preview) (Average) Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Bytes",
+              "label": "Disk Read B/s"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Bytes Timeline",
+              "label": "Disk Read Bytes (Average) Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Operations/Sec",
+              "label": "Disk Read IOPS"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Operations/Sec Timeline",
+              "label": "Disk Read Operations/Sec (Average) Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Bytes",
+              "label": "Disk Write B/s"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Bytes Timeline",
+              "label": "Disk Write Bytes (Average) Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Operations/Sec",
+              "label": "Disk Write IOPS"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Operations/Sec Timeline",
+              "label": "Disk Write Operations/Sec (Average) Timeline"
+            }
+          ]
+        },
+        "sortBy": []
+      },
+      "name": "metric - 3"
+    },
+    {
+      "type": 10,
+      "content": {
+        "chartId": "workbook5836bfc1-108e-4146-9b29-38162f304781",
+        "version": "MetricsItem/2.0",
+        "size": 0,
+        "chartType": 1,
+        "color": "redBright",
+        "resourceType": "microsoft.compute/virtualmachines",
+        "metricScope": 0,
+        "resourceIds": [
+          "/subscriptions/fd09e454-a13e-4e8c-a00e-a54b1385e2bd/resourceGroups/rg-jv-minecraftserver/providers/Microsoft.Compute/virtualMachines/vm-jv-minecraftserver"
+        ],
+        "timeContext": {
+          "durationMs": 1800000
+        },
+        "metrics": [
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Percentage CPU",
+            "aggregation": 4,
+            "splitBy": null
+          }
+        ],
+        "title": "CPU usage",
+        "gridSettings": {
+          "formatters": [
+            {
+              "columnMatch": "Subscription",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Name",
+              "formatter": 13,
+              "formatOptions": {
+                "linkTarget": "Resource"
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Percentage CPU Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Percentage CPU",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 1,
+                "options": null
+              }
+            }
+          ],
+          "rowLimit": 10000,
+          "labelSettings": [
+            {
+              "columnId": "microsoft.compute/virtualmachines--Percentage CPU",
+              "label": "Percentage CPU (Average)"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Percentage CPU Timeline",
+              "label": "Percentage CPU Timeline"
+            }
+          ]
+        }
+      },
+      "customWidth": "33",
+      "name": "metric - 0"
+    },
+    {
+      "type": 10,
+      "content": {
+        "chartId": "workbookd8da412e-56a7-434b-be7b-4d85e4cdc830",
+        "version": "MetricsItem/2.0",
+        "size": 0,
+        "chartType": 1,
+        "color": "green",
+        "resourceType": "microsoft.compute/virtualmachines",
+        "metricScope": 0,
+        "resourceIds": [
+          "/subscriptions/fd09e454-a13e-4e8c-a00e-a54b1385e2bd/resourceGroups/rg-jv-minecraftserver/providers/Microsoft.Compute/virtualMachines/vm-jv-minecraftserver"
+        ],
+        "timeContext": {
+          "durationMs": 3600000
+        },
+        "metrics": [
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Available Memory Percentage",
+            "aggregation": 4,
+            "splitBy": null
+          }
+        ],
+        "title": "RAM available",
+        "gridSettings": {
+          "rowLimit": 10000
+        }
+      },
+      "customWidth": "33",
+      "name": "metric - 2"
+    },
+    {
+      "type": 10,
+      "content": {
+        "chartId": "workbook8517b8cd-b9fe-4bd1-91fb-0763408fd040",
+        "version": "MetricsItem/2.0",
+        "size": 0,
+        "chartType": 1,
+        "resourceType": "microsoft.compute/virtualmachines",
+        "metricScope": 0,
+        "resourceIds": [
+          "/subscriptions/fd09e454-a13e-4e8c-a00e-a54b1385e2bd/resourceGroups/rg-jv-minecraftserver/providers/Microsoft.Compute/virtualMachines/vm-jv-minecraftserver"
+        ],
+        "timeContext": {
+          "durationMs": 3600000
+        },
+        "metrics": [
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Read Bytes",
+            "aggregation": 4,
+            "splitBy": null
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Read Operations/Sec",
+            "aggregation": 4
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Write Bytes",
+            "aggregation": 4
+          },
+          {
+            "namespace": "microsoft.compute/virtualmachines",
+            "metric": "microsoft.compute/virtualmachines--Disk Write Operations/Sec",
+            "aggregation": 4
+          }
+        ],
+        "title": "Disk usage",
+        "gridFormatType": 1,
+        "tileSettings": {
+          "showBorder": false,
+          "titleContent": {
+            "columnMatch": "Name",
+            "formatter": 13
+          },
+          "leftContent": {
+            "columnMatch": "Value",
+            "formatter": 12,
+            "formatOptions": {
+              "palette": "auto"
+            },
+            "numberFormat": {
+              "unit": 17,
+              "options": {
+                "maximumSignificantDigits": 3,
+                "maximumFractionDigits": 2
+              }
+            }
+          }
+        },
+        "mapSettings": {
+          "locInfo": "AzureResource",
+          "sizeSettings": "Value",
+          "sizeAggregation": "Sum",
+          "legendMetric": "Value",
+          "legendAggregation": "Sum",
+          "itemColorSettings": {
+            "type": "heatmap",
+            "colorAggregation": "Sum",
+            "nodeColorField": "Value",
+            "heatmapPalette": "greenRed"
+          },
+          "locInfoColumn": "Name"
+        },
+        "graphSettings": {
+          "type": 0,
+          "topContent": {
+            "columnMatch": "Subscription",
+            "formatter": 1
+          },
+          "centerContent": {
+            "columnMatch": "Value",
+            "formatter": 1,
+            "numberFormat": {
+              "unit": 17,
+              "options": {
+                "maximumSignificantDigits": 3,
+                "maximumFractionDigits": 2
+              }
+            }
+          }
+        },
+        "gridSettings": {
+          "formatters": [
+            {
+              "columnMatch": "Subscription",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Name",
+              "formatter": 13,
+              "formatOptions": {
+                "linkTarget": "Resource"
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Bytes Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Bytes",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 2,
+                "options": null
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Operations/Sec Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Read Operations/Sec",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 31,
+                "options": null
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Bytes Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Bytes",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 2,
+                "options": null
+              }
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Operations/Sec Timeline",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "microsoft.compute/virtualmachines--Disk Write Operations/Sec",
+              "formatter": 1,
+              "numberFormat": {
+                "unit": 31,
+                "options": null
+              }
+            }
+          ],
+          "rowLimit": 10000,
+          "labelSettings": [
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Bytes",
+              "label": "Disk Read Bytes (Average)"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Bytes Timeline",
+              "label": "Disk Read Bytes Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Operations/Sec",
+              "label": "Disk Read Operations/Sec (Average)"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Read Operations/Sec Timeline",
+              "label": "Disk Read Operations/Sec Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Bytes",
+              "label": "Disk Write Bytes (Average)"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Bytes Timeline",
+              "label": "Disk Write Bytes Timeline"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Operations/Sec",
+              "label": "Disk Write Operations/Sec (Average)"
+            },
+            {
+              "columnId": "microsoft.compute/virtualmachines--Disk Write Operations/Sec Timeline",
+              "label": "Disk Write Operations/Sec Timeline"
+            }
+          ]
+        }
+      },
+      "customWidth": "33",
+      "name": "metric - 3"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "{\"version\":\"AzureHealthQuery/1.0\",\"queryType\":\"Detailed\"}",
+        "size": 4,
+        "title": "Azure Health status",
+        "queryType": 4,
+        "resourceType": "microsoft.resources/subscriptions",
+        "crossComponentResources": [
+          "/subscriptions/fd09e454-a13e-4e8c-a00e-a54b1385e2bd"
+        ],
+        "gridSettings": {
+          "formatters": [
+            {
+              "columnMatch": "Availability state",
+              "formatter": 11
+            },
+            {
+              "columnMatch": "Occurred time",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Reported time",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Resource group",
+              "formatter": 5
+            },
+            {
+              "columnMatch": "Subscription",
+              "formatter": 5
+            }
+          ]
+        }
+      },
+      "name": "query - 4"
+    }
+  ],
+  "fallbackResourceIds": [
+    "azure monitor"
+  ],
+  "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
+}
